@@ -293,12 +293,15 @@ At the end, this function should return the new array with information added"*/
 
 // console.log(newArtist)
 
+// console.log(artists.push(Object={id: "20", name: "Morgan", years: "1995-2020", genre: "Web Design", nationality: "American", bio:"big dude who types"}))
+// console.log(artists)
 
+function addArtist(array, id, name, years, genre, nationality, bio){
+    array.push(Object = { id, name, years, genre, nationality, bio})
+    return array;
+}
 
-// function addArtist(array, object, id, name, years, genre, nationality, bio){
-//     array.push(object =)
-//     return array;
-//   }
+console.log(addArtist(artists, "20", "Morgan", "1995-2020", "Web Design", "American", "big dude who types"))
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
