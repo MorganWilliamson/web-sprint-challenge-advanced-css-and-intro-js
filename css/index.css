@@ -134,3 +134,23 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* Mobile Styling Rules */
+
+@media (max-width: 500px){
+    /* header/nav centering */
+    header nav{
+        display: inline-flex;
+        margin-bottom: 4%;
+        align-content: center;
+    }
+    header nav a{
+        padding: 5%;
+    }
+    header nav span{
+        margin: 8%;
+    }
+
+    /* hero image styling */
+    
+}
