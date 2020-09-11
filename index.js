@@ -243,17 +243,18 @@ console.log(getArtistByIndex(artists[0], 0));
 //for loop to look through the whole array? 
 //probably needs to be an if statement (if 20th century, return artist name.)
 
-// console.log(artists)
 
-// function get20s(array){
-//     for (let i = 0; i < array.length; i++){
-//       if (`${array.years}` > "1900" && `${array.years}` < "1999"){
-//         return `${name}`;
-//       }
-//     }
-//   }
+function get20s(array){
+    ageRange = [];
+    for (let i = 0; i < array.length; i++){
+      if ((array[i]["years"].split(" ")[0] >= 1900) && (array[i]["years"].split(" ")[2] < 2000)){
+        ageRange.push(array[i]["name"]);
+      }
+    }
+    return ageRange;
+  }
 
-// console.log(get20s(artists));
+console.log(get20s(artists));
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -266,14 +267,14 @@ console.log(getArtistByIndex(artists[0], 0));
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(array, index) {
-    array.splice(index, 1);
-      return array;
-  }
+// function removeArtist(array, index) {
+//     array.splice(index, 1);
+//       return array;
+//   }
   
- console.log(removeArtist(artists, [0]));
- console.log(removeArtist(artists, [0]));
- console.log(removeArtist(artists, [0]));
+//  console.log(removeArtist(artists, [0]));
+//  console.log(removeArtist(artists, [0]));
+//  console.log(removeArtist(artists, [0]));
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -288,11 +289,16 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+// const newArtist = [...artists];
 
-    /* Code here */
+// console.log(newArtist)
 
-  }
+
+
+// function addArtist(array, object, id, name, years, genre, nationality, bio){
+//     array.push(object =)
+//     return array;
+//   }
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
