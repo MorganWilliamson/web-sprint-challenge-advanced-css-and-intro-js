@@ -152,5 +152,21 @@ button:hover{
     }
 
     /* hero image styling */
-    
+    .title-container h1{
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    .title-container div{
+        width: 100%;
+    }
+
+    /* artist panel styling */
+    .artists-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .artist{
+        width: 90%;
+    }
 }
